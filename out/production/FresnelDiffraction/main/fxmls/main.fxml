@@ -65,7 +65,7 @@
                                     <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <children>
                                           <Label text="Count of opened zones" textAlignment="CENTER" wrapText="true" />
-                                          <Slider fx:id="mSlider" blockIncrement="0.001" max="20.0" value="1.0" />
+                                          <Slider fx:id="mSlider" blockIncrement="0.001" max="10.0" min="1.0" value="1.0" />
                                           <TextField fx:id="mTextField" maxWidth="-Infinity" minWidth="-Infinity" onKeyPressed="#setFromRField1" prefWidth="100.0" text="1" />
                                        </children>
                                     </VBox>

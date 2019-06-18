@@ -19,7 +19,7 @@ public class Modulating {
 
         Dimension winSize = new Dimension(500,500);
 
-        Diffraction frame = new Diffraction(winSize,1000,260,200,50,0,zoneRadius.getRadius() * 100);
+        Diffraction frame = new Diffraction(winSize,1000,(int) (b * 100),200,50,0,zoneRadius.getRadius() * 100);
         frame.computeFunction();
 
         int [] pixels = new int[winSize.width*winSize.height];

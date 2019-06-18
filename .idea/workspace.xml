@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1643edee-7e1c-4260-86af-92493cc143f8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a1.png" beforeDir="false" afterPath="$PROJECT_DIR$/a1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/main/controllers/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresnelDiffraction/main/controllers/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/main/fxmls/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresnelDiffraction/main/fxmls/main.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Modulating.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Modulating.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controllers/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/fxmls/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fxmls/main.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modeling/Modulating.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modeling/Modulating.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,23 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modeling/Diffraction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2000">
-              <caret line="82" column="58" selection-start-line="82" selection-start-column="54" selection-end-line="82" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/controllers/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+            <state relative-caret-position="-952">
+              <caret line="62" column="28" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -45,9 +35,11 @@
         <entry file="file://$PROJECT_DIR$/src/modeling/Modulating.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="21" column="98" selection-start-line="21" selection-start-column="98" selection-end-line="21" selection-end-column="98" />
+              <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#226#227#0" expanded="true" />
+                <element signature="e#262#263#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -162,6 +154,13 @@
               <item name="FresnelDiffraction" type="b2602c69:ProjectViewProjectNode" />
               <item name="FresnelDiffraction" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="fxmls" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FresnelDiffraction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FresnelDiffraction" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="modeling" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -180,7 +179,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560876278917" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560877795658" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../libs/mail.jar!/" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -285,12 +284,20 @@
       <updated>1560769721426</updated>
       <workItem from="1560769722954" duration="33062000" />
       <workItem from="1560847319269" duration="24326000" />
-      <workItem from="1560874554645" duration="1722000" />
+      <workItem from="1560874554645" duration="3228000" />
     </task>
+    <task id="LOCAL-00001" summary="First version">
+      <created>1560876310781</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1560876310782</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59110000" />
+    <option name="totallyTimeSpent" value="60616000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
@@ -312,7 +319,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3283582" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" weight="0.32936078" />
@@ -362,6 +369,36 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First version" />
+    <option name="LAST_COMMIT_MESSAGE" value="First version" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/main.fxml" />
     <entry file="file://$PROJECT_DIR$/src/modeling/Conditions.png" />
@@ -393,6 +430,18 @@
     <entry file="file://$PROJECT_DIR$/a1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/modeling/Modulating.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#262#263#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/modeling/Diffraction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2000">
@@ -403,20 +452,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modeling/Modulating.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="98" selection-start-line="21" selection-start-column="98" selection-end-line="21" selection-end-column="98" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/controllers/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+        <state relative-caret-position="-952">
+          <caret line="62" column="28" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
         </state>
       </provider>
     </entry>
