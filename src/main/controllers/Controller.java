@@ -1,15 +1,27 @@
 package main.controllers;
 
+import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.canvas.Canvas;
+import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Slider;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
+import javafx.stage.FileChooser;
 
+import javax.imageio.ImageIO;
+import javax.swing.text.Element;
+import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 import java.text.NumberFormat;
 import java.util.ResourceBundle;
@@ -19,14 +31,11 @@ public class Controller implements Initializable {
     @FXML
     HBox mainPane;
 
-
     @FXML
     AnchorPane authorsPane;
 
     @FXML
     VBox parametersPane;
-    @FXML
-    VBox countPane;
 
     @FXML
     Slider aSlider;
@@ -37,24 +46,26 @@ public class Controller implements Initializable {
     @FXML
     TextField bTextField;
     @FXML
-    Slider rSlider1;
+    Slider mSlider;
     @FXML
-    TextField rTextField1;
+    TextField mTextField;
 
     @FXML
-    Slider rSlider2;
+    Canvas image;
+    GraphicsContext gc;
+    Image curImage;
     @FXML
-    TextField rTextField2;
+    void updateImage() {
+        double a = aSlider.getValue() / 100;
+        double b = bSlider.getValue() / 100;
+        double m = mSlider.getValue();
+        double lambda = 7E-7d;
 
-    @FXML
-    void updateImage1() {
-        //TODO
+        curImage = new Image("test.png");
+        gc.clearRect(0, 0, 300, 300);
+        gc.drawImage(curImage, 0, 0);
     }
 
-    @FXML
-    void updateImage2() {
-        //TODO
-    }
 
     @FXML
     void setFromAField(KeyEvent ke) {
@@ -73,22 +84,8 @@ public class Controller implements Initializable {
     @FXML
     void setFromRField1(KeyEvent ke) {
         if(ke.getCode() == KeyCode.ENTER){
-            rSlider1.setValue(Double.parseDouble(rTextField1.getText()));
+            mSlider.setValue(Double.parseDouble(mTextField.getText()));
         }
-    }
-
-    @FXML
-    void byParameter() {
-        authorsBack();
-        parametersPane.setVisible(true);
-        countPane.setVisible(false);
-    }
-
-    @FXML
-    void byCount() {
-        authorsBack();
-        parametersPane.setVisible(false);
-        countPane.setVisible(true);
     }
 
     @FXML
@@ -105,7 +102,18 @@ public class Controller implements Initializable {
 
     @FXML
     void saveImage() {
-        //TODO
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Save Image");
+
+        File file = fileChooser.showSaveDialog(image.getScene().getWindow());
+        if (file != null) {
+            try {
+                ImageIO.write(SwingFXUtils.fromFXImage(curImage,
+                        null), "png", file);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        }
     }
 
     @FXML
@@ -117,8 +125,10 @@ public class Controller implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         aTextField.textProperty().bindBidirectional(aSlider.valueProperty(), NumberFormat.getNumberInstance());
         bTextField.textProperty().bindBidirectional(bSlider.valueProperty(), NumberFormat.getNumberInstance());
-        rTextField1.textProperty().bindBidirectional(rSlider1.valueProperty(), NumberFormat.getNumberInstance());
+        mTextField.textProperty().bindBidirectional(mSlider.valueProperty(), NumberFormat.getNumberInstance());
 
-        rTextField2.textProperty().bindBidirectional(rSlider2.valueProperty(), NumberFormat.getNumberInstance());
+        gc = image.getGraphicsContext2D();
+
+        updateImage();
     }
 }

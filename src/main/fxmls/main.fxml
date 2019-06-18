@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.geometry.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -17,12 +19,6 @@
             <MenuItem fx:id="menuSave" mnemonicParsing="false" onAction="#saveImage" text="Save Image" />
             <MenuItem fx:id="menuQuit" mnemonicParsing="false" onAction="#exit" text="Quit" />
           </items>
-        </Menu>
-        <Menu mnemonicParsing="false" text="Edit">
-               <items>
-                  <MenuItem fx:id="menuByParameters" mnemonicParsing="false" onAction="#byParameter" text="By parameters" />
-                  <MenuItem fx:id="menuByCount" mnemonicParsing="false" onAction="#byCount" text="By count of zones" />
-               </items>
         </Menu>
         <Menu mnemonicParsing="false" text="Help">
           <items>
@@ -47,8 +43,8 @@
                                     <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <children>
                                           <Label text="The distance from the source to the hole (cm)" textAlignment="CENTER" wrapText="true" />
-                                          <Slider fx:id="aSlider" blockIncrement="1.0" max="1000.0" value="100.0" />
-                                          <TextField fx:id="aTextField" maxWidth="-Infinity" minWidth="-Infinity" onKeyPressed="#setFromAField" prefWidth="100.0" text="100" />
+                                          <Slider fx:id="aSlider" blockIncrement="1.0" max="1000.0" min="20.0" value="200.0" />
+                                          <TextField fx:id="aTextField" maxWidth="-Infinity" minWidth="-Infinity" onKeyPressed="#setFromAField" prefWidth="100.0" text="200" />
                                        </children>
                                     </VBox>
                                  </children>
@@ -58,8 +54,8 @@
                                     <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <children>
                                           <Label text="The distance from the hole to the screen (cm)" textAlignment="CENTER" wrapText="true" />
-                                          <Slider fx:id="bSlider" blockIncrement="1.0" max="1000.0" value="200.0" />
-                                          <TextField fx:id="bTextField" maxWidth="-Infinity" minWidth="-Infinity" onKeyPressed="#setFromBField" prefWidth="100.0" text="200" />
+                                          <Slider fx:id="bSlider" blockIncrement="1.0" max="1000.0" min="20.0" value="300.0" />
+                                          <TextField fx:id="bTextField" maxWidth="-Infinity" minWidth="-Infinity" onKeyPressed="#setFromBField" prefWidth="100.0" text="300" />
                                        </children>
                                     </VBox>
                                  </children>
@@ -68,9 +64,9 @@
                                  <children>
                                     <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <children>
-                                          <Label text="Hole radius (cm)" textAlignment="CENTER" wrapText="true" />
-                                          <Slider fx:id="rSlider1" blockIncrement="0.001" max="1.0" value="0.1" />
-                                          <TextField fx:id="rTextField1" maxWidth="-Infinity" minWidth="-Infinity" onKeyPressed="#setFromRField1" prefWidth="100.0" text="0.1" />
+                                          <Label text="Count of opened zones" textAlignment="CENTER" wrapText="true" />
+                                          <Slider fx:id="mSlider" blockIncrement="0.001" max="20.0" value="1.0" />
+                                          <TextField fx:id="mTextField" maxWidth="-Infinity" minWidth="-Infinity" onKeyPressed="#setFromRField1" prefWidth="100.0" text="1" />
                                        </children>
                                     </VBox>
                                  </children>
@@ -79,53 +75,7 @@
                                  <children>
                                     <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <children>
-                                          <Button fx:id="updateButton1" mnemonicParsing="false" onAction="#updateImage1" text="Update" />
-                                       </children>
-                                    </VBox>
-                                 </children>
-                              </AnchorPane>
-                           </children>
-                        </VBox>
-                        <VBox fx:id="countPane" layoutX="15.0" layoutY="15.0" prefHeight="200.0" prefWidth="100.0" visible="false" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
-                           <children>
-                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
-                                 <children>
-                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                       <children>
-                                          <Label textAlignment="CENTER" wrapText="true" />
-                                          <Slider blockIncrement="0.1" />
-                                          <TextField maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
-                                       </children>
-                                    </VBox>
-                                 </children>
-                              </AnchorPane>
-                              <AnchorPane layoutX="15.0" layoutY="15.0" prefHeight="200.0" prefWidth="200.0">
-                                 <children>
-                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                       <children>
-                                          <Label textAlignment="CENTER" wrapText="true" />
-                                          <Slider blockIncrement="0.1" />
-                                          <TextField maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
-                                       </children>
-                                    </VBox>
-                                 </children>
-                              </AnchorPane>
-                              <AnchorPane layoutX="15.0" layoutY="15.0" prefHeight="200.0" prefWidth="200.0">
-                                 <children>
-                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                       <children>
-                                          <Label text="Hole radius (cm)" textAlignment="CENTER" wrapText="true" />
-                                          <Slider fx:id="rSlider2" blockIncrement="0.001" max="1.0" value="0.1" />
-                                          <TextField fx:id="rTextField2" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
-                                       </children>
-                                    </VBox>
-                                 </children>
-                              </AnchorPane>
-                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
-                                 <children>
-                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                       <children>
-                                          <Button fx:id="updateButton2" mnemonicParsing="false" onAction="#updateImage2" text="Update" />
+                                          <Button fx:id="updateButton" mnemonicParsing="false" onAction="#updateImage" text="Update" />
                                        </children>
                                     </VBox>
                                  </children>
@@ -138,6 +88,13 @@
                      <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </HBox.margin>
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                           <children>
+                              <Canvas fx:id="image" height="300.0" width="300.0" />
+                           </children>
+                        </VBox>
+                     </children>
                   </AnchorPane>
                </children>
             </HBox>
