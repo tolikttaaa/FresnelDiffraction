@@ -17,6 +17,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
+import modeling.Modulating;
 
 import javax.imageio.ImageIO;
 import javax.swing.text.Element;
@@ -61,9 +62,9 @@ public class Controller implements Initializable {
         double m = mSlider.getValue();
         double lambda = 7E-7d;
 
-        curImage = new Image("test.png");
+        curImage = SwingFXUtils.toFXImage(Modulating.getImage(a, b, m, lambda), null);
         gc.clearRect(0, 0, 300, 300);
-        gc.drawImage(curImage, 0, 0);
+        gc.drawImage(curImage, 0, 0, 300, 300);
     }
 
 

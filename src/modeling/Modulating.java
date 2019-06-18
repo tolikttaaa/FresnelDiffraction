@@ -2,7 +2,6 @@ package modeling;
 
 
 import javax.imageio.ImageIO;
-import javax.imageio.stream.ImageOutputStream;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -14,14 +13,14 @@ public class Modulating {
         getImage(1,1,1,6e-6);
     }
 
-    public static Image getImage(double a,double b,double n,double lambda) {
+    public static BufferedImage getImage(double a, double b, double n, double lambda) {
 
         ZoneRadius zoneRadius = new ZoneRadius(a,b,n,lambda);
 
         Dimension winSize = new Dimension(500,500);
 
-       Diffraction frame = new Diffraction(winSize,600,500,400,100,50,zoneRadius.getRadius());
-       frame.computeFunction();
+        Diffraction frame = new Diffraction(winSize,1000,260,200,50,0,zoneRadius.getRadius() * 100);
+        frame.computeFunction();
 
         int [] pixels = new int[winSize.width*winSize.height];
 
