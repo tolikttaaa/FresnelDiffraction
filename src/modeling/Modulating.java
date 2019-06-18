@@ -2,7 +2,6 @@ package modeling;
 
 
 import javax.imageio.ImageIO;
-import javax.imageio.stream.ImageOutputStream;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -11,7 +10,7 @@ import java.io.IOException;
 public class Modulating {
 
     public static void main(String[] args) {
-        getImage(1,1,1,6e-6);
+        getImage(1,1,2,600e-3);
     }
 
     public static Image getImage(double a,double b,double n,double lambda) {
@@ -20,7 +19,7 @@ public class Modulating {
 
         Dimension winSize = new Dimension(500,500);
 
-       Diffraction frame = new Diffraction(winSize,600,500,400,100,50,zoneRadius.getRadius());
+       Diffraction frame = new Diffraction(winSize,600,260,200,50,10,zoneRadius.getRadius());
        frame.computeFunction();
 
         int [] pixels = new int[winSize.width*winSize.height];
@@ -35,7 +34,7 @@ public class Modulating {
                 int colval = 0;
 
                     int col = (int)frame.func[i][j];
-                    colval = 0xFF000000 | (col*0X010101);
+                    colval = (col*0xFFFF0000);
 
                 int k, l;
                 for (k = x; k < x2; k++)
