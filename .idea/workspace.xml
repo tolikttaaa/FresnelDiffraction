@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1643edee-7e1c-4260-86af-92493cc143f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/ImageGetter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a1.png" beforeDir="false" afterPath="$PROJECT_DIR$/a1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/main/controllers/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresnelDiffraction/main/controllers/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/main/fxmls/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresnelDiffraction/main/fxmls/main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$Aperture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$Aperture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Modulating.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Modulating.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controllers/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/fxmls/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/fxmls/main.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modeling/Modulating.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modeling/Modulating.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modeling/ZoneRadius.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.png" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,12 +36,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/controllers/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="606">
-              <caret line="184" column="48" selection-start-line="184" selection-start-column="48" selection-end-line="184" selection-end-column="48" />
+            <state relative-caret-position="-867">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#3251#3252#0" expanded="true" />
                 <element signature="e#3281#3282#0" expanded="true" />
+                <element signature="e#3630#3631#0" expanded="true" />
+                <element signature="e#3743#3744#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modeling/Diffraction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="232" column="1" selection-start-line="232" selection-start-column="1" selection-end-line="232" selection-end-column="1" />
+            <state relative-caret-position="-649">
+              <caret line="37" column="15" lean-forward="true" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1023#1024#0" expanded="true" />
@@ -75,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/modeling/Modulating.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="-615">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -147,6 +141,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Anatolii Anishchenko &lt;tolik.anishenko@mail.ru&gt;" />
+      </list>
+    </option>
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -168,9 +167,9 @@
         <option value="$PROJECT_DIR$/src/modeling/Test.java" />
         <option value="$PROJECT_DIR$/src/modeling/ImageGetter.java" />
         <option value="$PROJECT_DIR$/src/main/ImageGetter.java" />
+        <option value="$PROJECT_DIR$/src/modeling/Diffraction.java" />
         <option value="$PROJECT_DIR$/src/main/controllers/Controller.java" />
         <option value="$PROJECT_DIR$/src/modeling/Modulating.java" />
-        <option value="$PROJECT_DIR$/src/modeling/Diffraction.java" />
       </list>
     </option>
   </component>
@@ -227,7 +226,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560951455052" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560959796331" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../libs/mail.jar!/" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -333,7 +332,7 @@
       <workItem from="1560769722954" duration="33062000" />
       <workItem from="1560847319269" duration="24326000" />
       <workItem from="1560874554645" duration="3274000" />
-      <workItem from="1560933939998" duration="13630000" />
+      <workItem from="1560933939998" duration="19260000" />
     </task>
     <task id="LOCAL-00001" summary="First version">
       <created>1560876310781</created>
@@ -349,11 +348,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560877814769</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Second version (doesn't work)">
+      <created>1560951499503</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1560951499504</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74292000" />
+    <option name="totallyTimeSpent" value="79922000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -366,9 +372,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26072875" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26072875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -383,7 +388,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3283582" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3283582" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.3283582" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" weight="0.32936078" />
@@ -445,7 +450,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First version" />
-    <option name="LAST_COMMIT_MESSAGE" value="First version" />
+    <MESSAGE value="Second version (doesn't work)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second version (doesn't work)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/main.fxml" />
@@ -485,18 +491,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/controllers/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="184" column="48" selection-start-line="184" selection-start-column="48" selection-end-line="184" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3251#3252#0" expanded="true" />
-            <element signature="e#3281#3282#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/fxmls/main.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
@@ -505,10 +499,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/controllers/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-867">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#3251#3252#0" expanded="true" />
+            <element signature="e#3281#3282#0" expanded="true" />
+            <element signature="e#3630#3631#0" expanded="true" />
+            <element signature="e#3743#3744#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/modeling/Diffraction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="232" column="1" selection-start-line="232" selection-start-column="1" selection-end-line="232" selection-end-column="1" />
+        <state relative-caret-position="-649">
+          <caret line="37" column="15" lean-forward="true" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1023#1024#0" expanded="true" />
@@ -521,10 +528,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/modeling/Modulating.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="-615">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
