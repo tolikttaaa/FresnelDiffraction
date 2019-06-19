@@ -3,24 +3,21 @@ package main.controllers;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Slider;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
-import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
+import main.ImageGetter;
 import modeling.Modulating;
 
 import javax.imageio.ImageIO;
-import javax.swing.text.Element;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
@@ -39,53 +36,68 @@ public class Controller implements Initializable {
     VBox parametersPane;
 
     @FXML
-    Slider aSlider;
+    Slider lSlider;
     @FXML
-    TextField aTextField;
+    TextField lTextField;
     @FXML
-    Slider bSlider;
+    Slider rSlider;
     @FXML
-    TextField bTextField;
-    @FXML
-    Slider mSlider;
-    @FXML
-    TextField mTextField;
+    TextField rTextField;
 
     @FXML
     Canvas image;
+
     GraphicsContext gc;
     Image curImage;
+
+    private ImageGetter imageGetter;
+
     @FXML
     void updateImage() {
-        double a = aSlider.getValue() / 100;
-        double b = bSlider.getValue() / 100;
-        double m = mSlider.getValue();
-        double lambda = 7E-7d;
+        int len = (int) lSlider.getValue();
+        double radius = rSlider.getValue();
 
-        curImage = SwingFXUtils.toFXImage(Modulating.getImage(a, b, m, lambda), null);
+        curImage = imageGetter.getImage(len, radius);
         gc.clearRect(0, 0, 300, 300);
         gc.drawImage(curImage, 0, 0, 300, 300);
     }
 
 
     @FXML
-    void setFromAField(KeyEvent ke) {
+    void setFromLField(KeyEvent ke) {
         if(ke.getCode() == KeyCode.ENTER){
-            aSlider.setValue(Double.parseDouble(aTextField.getText()));
+            int d = Integer.parseInt(lTextField.getText());
+            if (d < lSlider.getMin()) {
+                d = (int) lSlider.getMin();
+                lTextField.setText(Integer.toString(d));
+            }
+
+            if (d > lSlider.getMax()) {
+                d = (int) lSlider.getMax();
+                lTextField.setText(Integer.toString(d));
+            }
+
+            lSlider.setValue(Integer.parseInt(lTextField.getText()));
+            updateImage();
         }
     }
 
     @FXML
-    void setFromBField(KeyEvent ke) {
+    void setFromRField(KeyEvent ke) {
         if(ke.getCode() == KeyCode.ENTER){
-            bSlider.setValue(Double.parseDouble(bTextField.getText()));
-        }
-    }
+            double d = Double.parseDouble(rTextField.getText());
+            if (d < rSlider.getMin()) {
+                d = rSlider.getMin();
+                rTextField.setText(Double.toString(d));
+            }
 
-    @FXML
-    void setFromRField1(KeyEvent ke) {
-        if(ke.getCode() == KeyCode.ENTER){
-            mSlider.setValue(Double.parseDouble(mTextField.getText()));
+            if (d > rSlider.getMax()) {
+                d = rSlider.getMax();
+                rTextField.setText(Double.toString(d));
+            }
+
+            rSlider.setValue(Double.parseDouble(rTextField.getText()));
+            updateImage();
         }
     }
 
@@ -122,11 +134,60 @@ public class Controller implements Initializable {
         System.exit(0);
     }
 
+    @FXML
+    void circle() {
+        imageGetter = new ImageGetter() {
+            @Override
+            public Image getImage(int len, double radius) {
+                return SwingFXUtils.toFXImage(Modulating.getCircleImage(len, radius), null);
+            }
+        };
+    }
+
+    @FXML
+    void slit() {
+        imageGetter = new ImageGetter() {
+            @Override
+            public Image getImage(int len, double radius) {
+                //TODO
+                return null;
+            }
+        };
+    }
+
+    @FXML
+    void doubleSlit() {
+        imageGetter = new ImageGetter() {
+            @Override
+            public Image getImage(int len, double radius) {
+                //TODO
+                return null;
+            }
+        };
+    }
+
+    @FXML
+    void square() {
+        imageGetter = new ImageGetter() {
+            @Override
+            public Image getImage(int len, double radius) {
+                //TODO
+                return null;
+            }
+        };
+    }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        aTextField.textProperty().bindBidirectional(aSlider.valueProperty(), NumberFormat.getNumberInstance());
-        bTextField.textProperty().bindBidirectional(bSlider.valueProperty(), NumberFormat.getNumberInstance());
-        mTextField.textProperty().bindBidirectional(mSlider.valueProperty(), NumberFormat.getNumberInstance());
+        circle();
+
+        rSlider.valueProperty().addListener((observable, oldValue, newValue) -> {
+            rTextField.setText(Double.toString(((double) ((int) (newValue.doubleValue() * 100))) / 100));
+        });
+
+        lSlider.valueProperty().addListener((observable, oldValue, newValue) -> {
+            lTextField.setText(Integer.toString(newValue.intValue()));
+        });
 
         gc = image.getGraphicsContext2D();
 

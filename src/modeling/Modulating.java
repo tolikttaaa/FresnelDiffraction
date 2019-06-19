@@ -1,56 +1,65 @@
 package modeling;
 
-
-import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 
 public class Modulating {
-
-    public static void main(String[] args) {
-        getImage(1,1,1,6e-6);
-    }
-
-    public static BufferedImage getImage(double a, double b, double n, double lambda) {
-
-        ZoneRadius zoneRadius = new ZoneRadius(a,b,n,lambda);
-
+    public static BufferedImage getCircleImage(int len, double radius) {
         Dimension winSize = new Dimension(500,500);
 
-        Diffraction frame = new Diffraction(winSize,1000,(int) (b * 100),200,50,0,zoneRadius.getRadius() * 100);
+        Diffraction frame = Diffraction.getCircleDiffraction(winSize,1000, len,200,50,0, radius);
+
+        return getImage(winSize, frame);
+    }
+
+    public static BufferedImage getSlitImage(int len, double radius) {
+        Dimension winSize = new Dimension(500,500);
+
+        Diffraction frame = Diffraction.getSlitDiffraction(winSize,1000, len,200,50,0, radius);
+
+        return getImage(winSize, frame);
+    }
+
+    public static BufferedImage getDoubleSlitImage(int len, double radius) {
+        Dimension winSize = new Dimension(500,500);
+
+        Diffraction frame = Diffraction.getDoubleSlitDiffraction(winSize,1000, len,200,50,0, radius);
+
+        return getImage(winSize, frame);
+    }
+
+    public static BufferedImage getSquareImage(int len, double radius) {
+        Dimension winSize = new Dimension(500,500);
+
+        Diffraction frame = Diffraction.getSquareDiffraction(winSize,1000, len,200,50,0, radius);
+
+        return getImage(winSize, frame);
+    }
+
+    private static BufferedImage getImage(Dimension imageSize, Diffraction frame) {
         frame.computeFunction();
 
-        int [] pixels = new int[winSize.width*winSize.height];
+        int [] pixels = new int[imageSize.width * imageSize.height];
 
-        int i,j;
+        int i, j;
         for (i = 0; i != frame.gridSizeX; i++)
             for (j = 0; j != frame.gridSizeY; j++) {
-                int x = i*winSize.width/frame.gridSizeX;
-                int y = j*winSize.height/frame.gridSizeY;
-                int x2 = (i+1)*winSize.width/frame.gridSizeX;
-                int y2 = (j+1)*winSize.height/frame.gridSizeY;
-                int colval = 0;
-
-                    int col = (int)frame.func[i][j];
-                    colval = 0xFF000000 | (col*0X010101);
-
+                int x = i * imageSize.width / frame.gridSizeX;
+                int y = j * imageSize.height / frame.gridSizeY;
+                int x2 = (i + 1) * imageSize.width / frame.gridSizeX;
+                int y2 = (j + 1) * imageSize.height / frame.gridSizeY;
+                int col = (int) frame.func[i][j];
+                int colVal = 0XFFFFFF ^ (col * 0X000101);
                 int k, l;
-                for (k = x; k < x2; k++)
-                    for (l = y; l < y2; l++){
-                        pixels[k+l*winSize.width] = colval;
-                        }
+                for (k = x; k < x2; k++) {
+                    for (l = y; l < y2; l++) {
+                        pixels[k + l * imageSize.width] = colVal;
+                    }
+                }
             }
 
-        BufferedImage pixelImage = new BufferedImage(winSize.width, winSize.height, BufferedImage.TYPE_INT_RGB);
-        pixelImage.setRGB(0, 0, winSize.width, winSize.height, pixels, 0, winSize.width);
-
-        try {
-            ImageIO.write(pixelImage,"png", new File("a1.png"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        BufferedImage pixelImage = new BufferedImage(imageSize.width, imageSize.height, BufferedImage.TYPE_INT_RGB);
+        pixelImage.setRGB(0, 0, imageSize.width, imageSize.height, pixels,0, imageSize.width);
 
         return pixelImage;
     }
