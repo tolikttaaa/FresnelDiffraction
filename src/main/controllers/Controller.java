@@ -1,5 +1,6 @@
 package main.controllers;
 
+import javafx.beans.value.ObservableValue;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -15,14 +16,12 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
 import main.ImageGetter;
-//import modeling.Modulating;
+import modeling.Modulating;
 
 import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
-import java.text.NumberFormat;
 import java.util.ResourceBundle;
 
 
@@ -48,10 +47,11 @@ public class Controller implements Initializable {
     @FXML
     Canvas image;
 
-    GraphicsContext gc;
-    Image curImage;
+    private GraphicsContext gc;
+    private Image curImage;
 
     private ImageGetter imageGetter;
+    private Modulating modulate;
 
     @FXML
     void updateImage() {
@@ -137,62 +137,45 @@ public class Controller implements Initializable {
 
     @FXML
     void circle() {
-        imageGetter = new ImageGetter() {
-            @Override
-            public Image getImage(int len, double radius) {
-//                return SwingFXUtils.toFXImage(Modulating.getCircleImage(len, radius), null);
-            return null;
-            }
-        };
+        imageGetter = (len, radius) -> SwingFXUtils.toFXImage(modulate.getCircleImage(len, radius), null);
+        updateImage();
     }
 
     @FXML
     void slit() {
-        imageGetter = new ImageGetter() {
-            @Override
-            public Image getImage(int len, double radius) {
-                //TODO
-                return null;
-            }
-        };
+        imageGetter = (len, radius) -> SwingFXUtils.toFXImage(modulate.getSlitImage(len, radius), null);
+        updateImage();
     }
 
     @FXML
     void doubleSlit() {
-        imageGetter = new ImageGetter() {
-            @Override
-            public Image getImage(int len, double radius) {
-                //TODO
-                return null;
-            }
-        };
+        imageGetter = (len, radius) -> SwingFXUtils.toFXImage(modulate.getDoubleSlitImage(len, radius), null);
+        updateImage();
     }
 
     @FXML
     void square() {
-        imageGetter = new ImageGetter() {
-            @Override
-            public Image getImage(int len, double radius) {
-                //TODO
-                return null;
-            }
-        };
+        imageGetter = (len, radius) -> SwingFXUtils.toFXImage(modulate.getSquareImage(len, radius), null);
+        updateImage();
     }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        circle();
+        modulate = new Modulating();
 
-        rSlider.valueProperty().addListener((observable, oldValue, newValue) -> {
-            rTextField.setText(Double.toString(((double) ((int) (newValue.doubleValue() * 100))) / 100));
-        });
+        rSlider.valueProperty().addListener((observable, oldValue, newValue) -> rTextField.setText(Double.toString(((double) ((int) (newValue.doubleValue() * 100))) / 100)));
+        rSlider.valueChangingProperty().addListener(this::changed);
 
-        lSlider.valueProperty().addListener((observable, oldValue, newValue) -> {
-            lTextField.setText(Integer.toString(newValue.intValue()));
-        });
+        lSlider.valueProperty().addListener((observable, oldValue, newValue) -> lTextField.setText(Integer.toString(newValue.intValue())));
+        lSlider.valueChangingProperty().addListener(this::changed);
 
         gc = image.getGraphicsContext2D();
+        circle();
+    }
 
-        updateImage();
+    private void changed(ObservableValue<? extends Boolean> observableValue, Boolean wasChanging, Boolean changing) {
+        if (!changing) {
+            updateImage();
+        }
     }
 }

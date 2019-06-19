@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FresnelDiffraction:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/FresnelDiffraction_jar</output-path>
+    <root id="archive" name="FresnelDiffraction.jar">
+      <element id="module-output" name="FresnelDiffraction" />
+    </root>
+  </artifact>
+</component>

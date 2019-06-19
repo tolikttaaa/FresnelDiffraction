@@ -3,12 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="1643edee-7e1c-4260-86af-92493cc143f8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a1.png" beforeDir="false" afterPath="$PROJECT_DIR$/a1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/main/controllers/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresnelDiffraction/main/controllers/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/META-INF/FresnelDiffraction.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/main/Launcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/main/controllers/Controller$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/main/controllers/Controller$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/main/controllers/Controller$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/main/controllers/Controller$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/main/controllers/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/main/fxmls/main.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$Aperture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$Aperture.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$BlockAperture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$BlockAperture.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$CircularAperture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$CircularAperture.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$DoubleSlitAperture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$DoubleSlitAperture.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$OneDimensionalAperture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$OneDimensionalAperture.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$SlitAperture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$SlitAperture.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$SquareAperture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$SquareAperture.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Modulating.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/ZoneRadius.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/test.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controllers/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modeling/Diffraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modeling/Diffraction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modeling/Modulating.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modeling/Modulating.java" afterDir="false" />
@@ -40,78 +52,44 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Launcher.java">
+        <entry file="file://$PROJECT_DIR$/src/main/controllers/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="-2710">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3331#3332#0" expanded="true" />
+                <element signature="e#3361#3362#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modeling/Diffraction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="241" column="31" selection-start-line="241" selection-start-column="31" selection-end-line="241" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/modeling/Diffraction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#7346#7347#0" expanded="true" />
-                <element signature="e#20385#25483#0" />
-                <element signature="e#26631#26632#0" expanded="true" />
-                <element signature="e#26681#26682#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/a1.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modeling/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modeling/NDiffraction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="1967" column="14" selection-start-line="1967" selection-start-column="14" selection-end-line="1967" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#74088#0" expanded="true" />
-                <element signature="e#23686#27747#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modeling/Modulating.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="136">
+              <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/controllers/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1683">
-              <caret line="142" column="52" selection-start-line="142" selection-start-column="52" selection-end-line="142" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3264#3265#0" expanded="true" />
-                <element signature="e#3294#3295#0" expanded="true" />
+                <element signature="e#465#466#0" expanded="true" />
+                <element signature="e#498#499#0" expanded="true" />
+                <element signature="e#460#461#0" expanded="true" />
+                <element signature="e#524#525#0" expanded="true" />
+                <element signature="e#720#721#0" expanded="true" />
+                <element signature="e#782#783#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,8 +106,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sca</find>
-      <find>getColor</find>
       <find>basel</find>
       <find>compute</find>
       <find>getC</find>
@@ -151,13 +127,15 @@
       <find>getColo</find>
       <find>k</find>
       <find>color</find>
-      <find>color</find>
       <find>colorMu</find>
       <find>pix</find>
       <find>main</find>
       <find>compu</find>
       <find>Dimension</find>
       <find>out</find>
+      <find>init</find>
+      <find>dou</find>
+      <find>doubles</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -182,16 +160,16 @@
         <option value="$PROJECT_DIR$/src/modeling/ImageGetter.java" />
         <option value="$PROJECT_DIR$/src/main/ImageGetter.java" />
         <option value="$PROJECT_DIR$/src/modeling/NDiffraction.java" />
-        <option value="$PROJECT_DIR$/src/main/controllers/Controller.java" />
         <option value="$PROJECT_DIR$/src/modeling/Test.java" />
-        <option value="$PROJECT_DIR$/src/modeling/Modulating.java" />
         <option value="$PROJECT_DIR$/src/modeling/Diffraction.java" />
+        <option value="$PROJECT_DIR$/src/main/controllers/Controller.java" />
+        <option value="$PROJECT_DIR$/src/modeling/Modulating.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
+    <option name="x" value="951" />
+    <option name="width" value="975" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -202,28 +180,38 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="FresnelDiffraction" type="58d84e3e:PackageViewProjectNode" />
-              <item name="FresnelDiffraction" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="FresnelDiffraction" type="58d84e3e:PackageViewProjectNode" />
-              <item name="FresnelDiffraction" type="616d4139:PackageViewModuleNode" />
-              <item name="modeling" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="FresnelDiffraction" type="b2602c69:ProjectViewProjectNode" />
               <item name="FresnelDiffraction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FresnelDiffraction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FresnelDiffraction" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FresnelDiffraction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FresnelDiffraction" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FresnelDiffraction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FresnelDiffraction" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="FresnelDiffraction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FresnelDiffraction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FresnelDiffraction" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="FresnelDiffraction" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FresnelDiffraction" type="b2602c69:ProjectViewProjectNode" />
@@ -240,11 +228,34 @@
               <item name="FresnelDiffraction" type="b2602c69:ProjectViewProjectNode" />
               <item name="FresnelDiffraction" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="fxmls" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FresnelDiffraction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FresnelDiffraction" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="modeling" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FresnelDiffraction" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="FresnelDiffraction" type="58d84e3e:PackageViewProjectNode" />
+              <item name="FresnelDiffraction" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="FresnelDiffraction" type="58d84e3e:PackageViewProjectNode" />
+              <item name="FresnelDiffraction" type="616d4139:PackageViewModuleNode" />
+              <item name="modeling" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
@@ -257,10 +268,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560951455052" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560964955479" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../libs/mail.jar!/" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -282,7 +293,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Diffraction">
+  <component name="RunManager" selected="Application.Launcher">
     <configuration name="Diffraction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="modeling.Diffraction" />
       <module name="FresnelDiffraction" />
@@ -343,8 +354,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Diffraction" />
         <item itemvalue="Application.Launcher" />
+        <item itemvalue="Application.Diffraction" />
         <item itemvalue="Application.Modulating" />
         <item itemvalue="Application.Main" />
       </list>
@@ -383,7 +394,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81821000" />
+    <option name="totallyTimeSpent" value="85643000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -395,10 +406,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26072875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -406,8 +417,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.659805" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49959514" weight="0.3283582" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49716598" visible="true" weight="0.17578773" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39966834" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -416,7 +427,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3283582" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.502834" side_tool="true" visible="true" weight="0.17578773" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32827735" />
       <window_info anchor="bottom" id="Statistic" order="13" weight="0.76119405" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -429,38 +440,6 @@
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.659805" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39966834" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32827735" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3283582" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32827735" />
-      <window_info anchor="bottom" id="Statistic" order="13" weight="0.76119405" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Database" order="5" weight="0.32955465" />
-      <window_info anchor="right" id="Maven" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -530,43 +509,12 @@
     <entry file="file://$PROJECT_DIR$/src/modeling/Final.java" />
     <entry file="file://$PROJECT_DIR$/src/modeling/FunctionCalculator.java" />
     <entry file="file://$PROJECT_DIR$/sex.png" />
-    <entry file="file://$PROJECT_DIR$/src/main/ImageGetter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/modeling/ZoneRadius.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/fxmls/main.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="859">
-          <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modeling/NDiffraction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="1967" column="14" selection-start-line="1967" selection-start-column="14" selection-end-line="1967" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#74088#0" expanded="true" />
-            <element signature="e#23686#27747#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modeling/NDiffraction.java" />
     <entry file="file://$PROJECT_DIR$/src/test.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modeling/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modeling/Test.java" />
     <entry file="file://$PROJECT_DIR$/src/main/Launcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -577,38 +525,62 @@
     <entry file="file://$PROJECT_DIR$/a1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/controllers/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/main/ImageGetter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1683">
-          <caret line="142" column="52" selection-start-line="142" selection-start-column="52" selection-end-line="142" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3264#3265#0" expanded="true" />
-            <element signature="e#3294#3295#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modeling/Modulating.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/javafx-src.zip!/javafx/beans/value/ChangeListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="159">
+          <caret line="57" column="22" lean-forward="true" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/fxmls/main.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="859">
+          <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/controllers/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2710">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3331#3332#0" expanded="true" />
+            <element signature="e#3361#3362#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modeling/Diffraction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
+        <state relative-caret-position="217">
+          <caret line="241" column="31" selection-start-line="241" selection-start-column="31" selection-end-line="241" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7346#7347#0" expanded="true" />
-            <element signature="e#20385#25483#0" />
-            <element signature="e#26631#26632#0" expanded="true" />
-            <element signature="e#26681#26682#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modeling/Modulating.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
           </folding>
         </state>
       </provider>

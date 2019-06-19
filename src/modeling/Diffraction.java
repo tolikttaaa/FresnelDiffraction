@@ -1,11 +1,10 @@
 package modeling;
 
 import java.awt.*;
-import java.awt.image.*;
+import java.awt.image.BufferedImage;
 
 class Diffraction{
-
-    Dimension winSize;
+    private Dimension winSize;
 
     int gridSizeX = 200;
     int gridSizeY = 200;
@@ -14,16 +13,16 @@ class Diffraction{
     double radius;
 
     int gridBar=1000;
-    int lengthBar=260;//TODO from params
+    int lengthBar=260;
     int zoomBar=200;
     int brightnessBar=50;
     double colorMult;
     double zbase;
     static final double pi = 3.14159265358979323846;
     static final double pi2 = pi*2;
-    double func[][];
+    double[][] func;
     boolean functionChanged;
-    int pixels[];
+    int[] pixels;
 
     Aperture aperture;
 
@@ -110,8 +109,10 @@ class Diffraction{
 
     int angleSteps;
     int angleStepsMask;
-    double angcos1[], angsin1[];
-    long angcos2[], angsin2[];
+    double[] angcos1;
+    double[] angsin1;
+    long[] angcos2;
+    long[] angsin2;
     int angleSteps2;
     int angleSteps2Mask;
     static final int fixedPoint = 256;
@@ -219,11 +220,6 @@ class Diffraction{
         }
     }
 
-    int sign(double x) {
-        return x < 0 ? -1 : 1;
-    }
-
-
     int getColorValue(int i, int j) {
         int val = (int) (func[i][j] * colorMult);
         if (val > 255)
@@ -234,25 +230,21 @@ class Diffraction{
     abstract class Aperture {
         abstract void compute();
         abstract void setToDefaults();
-        int defaultBrightness() { return 50; }
         boolean oneDimensional() { return false; }
         boolean hasXSymmetry() { return false; }
         boolean hasYSymmetry() { return false; }
         boolean hasDiagonalSymmetry() { return false; }
-        void rezoom(double x) {}
         Aperture() { setToDefaults(); }
-    };
+    }
 
     class CircularAperture extends Aperture {
-        String getName() { return "circle"; }
         boolean hasXSymmetry() { return true; }
         boolean hasYSymmetry() { return true; }
         boolean hasDiagonalSymmetry() { return true; }
-        void setToDefaults() { radius = .25; }
-        void rezoom(double z) { radius *= z; }
+        void setToDefaults() {}
         void compute() {
             int i, j;
-            for (i = 0; i != gridSizeX/2; i++) {
+            for (i = 0; i != gridSizeX / 2; i++) {
                 for (j = 0; j <= i; j++) {
                     clearAccum();
                     double x0 = (i/(double) gridSizeX)-.5;
@@ -311,36 +303,16 @@ class Diffraction{
                 }
             }
         }
-
-
-        int getSelection(int x, int y) {
-            int rx = winSize.width/2-x;
-            int ry = winSize.height/2-y;
-            double r = java.lang.Math.sqrt(rx*rx+ry*ry)/winSize.width;
-            return (java.lang.Math.abs(r-radius) < 5./winSize.width) ? 1 : -1;
-        }
-
-        boolean drag(int x, int y) {
-            int rx = winSize.width/2-x;
-            int ry = winSize.height/2-y;
-            double r = java.lang.Math.sqrt(rx*rx+ry*ry)/winSize.width;
-            if (r == radius)
-                return false;
-            radius = r;
-            return true;
-        }
-
-        double getDimension() { return radius*2; }
     }
 
     abstract class OneDimensionalAperture extends Aperture {
-        public double lineLocations[];
+        public double[] lineLocations;
         public int lineCount;
         boolean oneDimensional() { return true; }
 
         void compute() {
             int i, j;
-            double result[] = new double[2];
+            double[] result = new double[2];
             // by default we use only green light.
             int xlim = (hasXSymmetry()) ? gridSizeX/2 : gridSizeX;
             double astart = 0;
@@ -363,12 +335,6 @@ class Diffraction{
                 func[i][0] = .5*(ar*ar + ai*ai);
             }
         }
-
-        void rezoom(double z) {
-            int i;
-            for (i = 0; i != lineCount; i++)
-                lineLocations[i] *= z;
-        }
     }
 
     class SlitAperture extends OneDimensionalAperture {
@@ -377,7 +343,6 @@ class Diffraction{
             lineLocations[0] = -radius;
             lineLocations[1] =  radius;
         }
-        int defaultBrightness() { return 200; }
         boolean hasXSymmetry() { return true; }
     }
 
@@ -389,31 +354,30 @@ class Diffraction{
             lineLocations[2] =  1/8.0;
             lineLocations[3] =  radius;
         }
-        int defaultBrightness() { return 140; }
         boolean hasXSymmetry() { return true; }
     }
 
     abstract class BlockAperture extends Aperture {
         int blockCountX, blockCountY;
 
-        boolean blocks[][];
+        boolean[][] blocks;
 
         // Lines.  Only odd indices used.
-        double lineXLocations[];
-        double lineYLocations[];
+        double[] lineXLocations;
+        double[] lineYLocations;
 
         int rectCount;
-        double rects[][];
+        double[][] rects;
 
         abstract void setupRects();
 
         void compute() {
             setupRects();
             int i, j;
-            double result1[] = new double[2];
-            double result2[] = new double[2];
-            double result3[] = new double[2];
-            double result4[] = new double[2];
+            double[] result1 = new double[2];
+            double[] result2 = new double[2];
+            double[] result3 = new double[2];
+            double[] result4 = new double[2];
             // by default we use only green light.
             double astart = 0;
             int xlim = (hasXSymmetry()) ? gridSizeX / 2 : gridSizeX;
@@ -444,96 +408,13 @@ class Diffraction{
                 }
             }
         }
-
-        boolean isSelected(int x, int y) {
-            return isSelected(x, y, 0);
-        }
-
-        boolean isSelected(int x, int y, int iter) {
-            // determine if a line is selected, accounting for
-            // symmetry.
-            return false;
-        }
-
-        int getSelection(int x, int y) {
-            double xf = ((double) x)/winSize.width - .5;
-            double yf = ((double) y)/winSize.width - .5;
-            double thresh = 3./winSize.width;
-            int sel = -1;
-            int i;
-            for (i = 1; i < blockCountX; i += 2) {
-                double dist = java.lang.Math.abs(lineXLocations[i]-xf);
-                if (dist < thresh) {
-                    sel = 100+i;
-                    thresh = dist;
-                }
-            }
-            for (i = 1; i < blockCountY; i += 2) {
-                double dist = java.lang.Math.abs(lineYLocations[i]-yf);
-                if (dist < thresh) {
-                    sel = 200+i;
-                    thresh = dist;
-                }
-            }
-            return sel;
-        }
-
-        boolean drag(int x, int y) {
-            double xf = ((double) x)/winSize.width - .5;
-            double yf = ((double) y)/winSize.width - .5;
-            return dragLine(-101, -1, xf, 0);
-        }
-
-        void rezoom(double z) {
-            int i;
-            for (i = 1; i < blockCountX; i += 2)
-                lineXLocations[i] *= z;
-            for (i = 1; i < blockCountY; i += 2)
-                lineYLocations[i] *= z;
-        }
-
-        boolean dragLine(int x, int y, double loc, int iter) {
-            // drag a line and all lines it is related to by symmetry.
-            if (x != -1) {
-                if (hasXSymmetry() && sign(lineXLocations[x]) != sign(loc))
-                    return false;
-                if (x > 1 && loc <= lineXLocations[x-2])
-                    return false;
-                if (x < blockCountX-2 && loc >= lineXLocations[x+2])
-                    return false;
-            }
-            if (y != -1) {
-                if (hasYSymmetry() && sign(lineYLocations[y]) != sign(loc))
-                    return false;
-                if (y > 1 && loc <= lineYLocations[y-2])
-                    return false;
-                if (y < blockCountY-2 && loc >= lineYLocations[y+2])
-                    return false;
-            }
-            if (x != -1 && hasXSymmetry() && iter < 1)
-                dragLine(blockCountX-1-x, y, -loc, 1);
-            if (y != -1 && hasYSymmetry() && iter < 2)
-                dragLine(x, blockCountY-1-y, -loc, 2);
-            if (hasDiagonalSymmetry() && iter < 3)
-                dragLine(y, x, loc, 3);
-            if (x != -1)
-                lineXLocations[x] = loc;
-            if (y != -1)
-                lineYLocations[y] = loc;
-            return true;
-        }
-
-        double getDimension() { return lineXLocations[blockCountX-2]-
-                lineXLocations[1]; }
     }
 
     class SquareAperture extends BlockAperture {
-        String getName() { return "square"; }
         boolean hasXSymmetry() { return true; }
         boolean hasYSymmetry() { return true; }
         boolean hasDiagonalSymmetry() { return true; }
         void setToDefaults() {
-            double sqdim = .25;
             blockCountX = blockCountY = 5;
             blocks = new boolean[blockCountX][blockCountY];
             blocks[2][2] = true;
@@ -547,7 +428,6 @@ class Diffraction{
         void setupRects() {
             rectCount = 1;
             rects = new double[1][5];
-            double sqdim = lineXLocations[3];
             rects[0][0] = -radius;
             rects[0][1] = -radius;
             rects[0][2] = radius;
@@ -559,7 +439,7 @@ class Diffraction{
     // fresnel integral routines from Cephes Math Library
 
     /* S(x) for small x */
-    static final double sn[] = {
+    static final double[] sn = {
             -2.99181919401019853726E3,
             7.08840045257738576863E5,
             -6.29741486205862506537E7,
@@ -567,7 +447,7 @@ class Diffraction{
             -4.42979518059697779103E10,
             3.18016297876567817986E11,
     };
-    static final double sd[] = {
+    static final double[] sd = {
             2.81376268889994315696E2,
             4.55847810806532581675E4,
             5.17343888770096400730E6,
@@ -576,7 +456,7 @@ class Diffraction{
             6.07366389490084639049E11,
     };
 
-    static final double cn[] = {
+    static final double[] cn = {
             -4.98843114573573548651E-8,
             9.50428062829859605134E-6,
             -6.45191435683965050962E-4,
@@ -584,7 +464,7 @@ class Diffraction{
             -2.05525900955013891793E-1,
             9.99999999999999998822E-1,
     };
-    static final double cd[] = {
+    static final double[] cd = {
             3.99982968972495980367E-12,
             9.15439215774657478799E-10,
             1.25001862479598821474E-7,
@@ -595,7 +475,7 @@ class Diffraction{
     };
 
     /* Auxiliary function f(x) */
-    static final double fn[] = {
+    static final double[] fn = {
             4.21543555043677546506E-1,
             1.43407919780758885261E-1,
             1.15220955073585758835E-2,
@@ -607,7 +487,7 @@ class Diffraction{
             1.34283276233062758925E-16,
             3.76329711269987889006E-20,
     };
-    static final double fd[] = {
+    static final double[] fd = {
             /*  1.00000000000000000000E0, */
             7.51586398353378947175E-1,
             1.16888925859191382142E-1,
@@ -622,7 +502,7 @@ class Diffraction{
     };
 
     /* Auxiliary function g(x) */
-    static final double gn[] = {
+    static final double[] gn = {
             5.04442073643383265887E-1,
             1.97102833525523411709E-1,
             1.87648584092575249293E-2,
@@ -636,7 +516,7 @@ class Diffraction{
             1.86958710162783235106E-22,
     };
 
-    static final double gd[] = {
+    static final double[] gd = {
             /*  1.00000000000000000000E0, */
             1.47495759925128324529E0,
             3.37748989120019970451E-1,
@@ -654,7 +534,7 @@ class Diffraction{
     static final double PI = pi;
     static final double PIBYTWO = pi/2;
 
-    int fresnl(double xxa, double result[]) {
+    int fresnl(double xxa, double[] result) {
         double f, g, cc, ss, c, s, t, u;
         double x, x2;
 
@@ -697,7 +577,7 @@ class Diffraction{
         return (0);
     }
 
-    double polevl(double x, double coef[], int N) {
+    double polevl(double x, double[] coef, int N) {
         double ans;
         int i;
         int p = 0;
@@ -712,7 +592,7 @@ class Diffraction{
         return (ans);
     }
 
-    double p1evl(double x, double coef[], int N) {
+    double p1evl(double x, double[] coef, int N) {
         double ans;
         int p = 0;
         int i;
