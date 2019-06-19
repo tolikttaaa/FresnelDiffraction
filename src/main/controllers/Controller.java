@@ -15,9 +15,10 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
 import main.ImageGetter;
-import modeling.Modulating;
+//import modeling.Modulating;
 
 import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
@@ -139,7 +140,8 @@ public class Controller implements Initializable {
         imageGetter = new ImageGetter() {
             @Override
             public Image getImage(int len, double radius) {
-                return SwingFXUtils.toFXImage(Modulating.getCircleImage(len, radius), null);
+//                return SwingFXUtils.toFXImage(Modulating.getCircleImage(len, radius), null);
+            return null;
             }
         };
     }
