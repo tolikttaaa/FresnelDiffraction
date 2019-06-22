@@ -3,27 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="1643edee-7e1c-4260-86af-92493cc143f8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/META-INF/FresnelDiffraction.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/main/Launcher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/main/controllers/Controller$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/main/controllers/Controller$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/main/controllers/Controller$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/main/controllers/Controller$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/main/controllers/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/main/fxmls/main.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$Aperture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$Aperture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$BlockAperture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$BlockAperture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$CircularAperture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$CircularAperture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$DoubleSlitAperture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$DoubleSlitAperture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$OneDimensionalAperture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$OneDimensionalAperture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$SlitAperture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$SlitAperture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$SquareAperture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$SquareAperture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$Aperture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$BlockAperture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$CircularAperture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$DoubleSlitAperture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$OneDimensionalAperture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$SlitAperture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction$SquareAperture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FresnelDiffraction/modeling/Diffraction.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controllers/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modeling/Diffraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modeling/Diffraction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modeling/Modulating.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modeling/Modulating.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modeling/Modulating.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,24 +42,64 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/controllers/Controller.java">
+        <entry file="file://$PROJECT_DIR$/src/modeling/Diffraction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2710">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="-18">
+              <caret line="133" column="12" selection-start-line="133" selection-start-column="12" selection-end-line="133" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Launcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modeling/apertures/OneDimensionalAperture.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3331#3332#0" expanded="true" />
-                <element signature="e#3361#3362#0" expanded="true" />
+                <element signature="e#219#220#0" expanded="true" />
+                <element signature="e#259#260#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modeling/Diffraction.java">
+        <entry file="file://$PROJECT_DIR$/src/modeling/apertures/SquareAperture.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="241" column="31" selection-start-line="241" selection-start-column="31" selection-end-line="241" selection-end-column="31" />
+            <state relative-caret-position="272">
+              <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#285#286#0" expanded="true" />
+                <element signature="e#326#327#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modeling/calculations/FresnelCalc.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2594">
+              <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/modeling/drawing/Diffraction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="43" column="59" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,20 +107,33 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/modeling/Modulating.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modeling/apertures/CircularAperture.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+            <state relative-caret-position="398">
+              <caret line="185" column="31" selection-start-line="185" selection-start-column="31" selection-end-line="185" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modeling/apertures/SlitAperture.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#465#466#0" expanded="true" />
-                <element signature="e#498#499#0" expanded="true" />
-                <element signature="e#460#461#0" expanded="true" />
-                <element signature="e#524#525#0" expanded="true" />
-                <element signature="e#720#721#0" expanded="true" />
-                <element signature="e#782#783#0" expanded="true" />
+                <element signature="e#147#148#0" expanded="true" />
+                <element signature="e#187#188#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modeling/apertures/Aperture.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -106,28 +149,13 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>basel</find>
-      <find>compute</find>
-      <find>getC</find>
-      <find>setF</find>
-      <find>radius =</find>
-      <find>computeF</find>
-      <find>update</find>
-      <find>canvas</find>
-      <find>mult</find>
-      <find>bar</find>
-      <find>.getValue()</find>
-      <find>UPDA</find>
       <find>//</find>
-      <find>leng</find>
       <find>create</find>
       <find>rever</find>
       <find>shad</find>
       <find>defaul</find>
       <find>getColo</find>
       <find>k</find>
-      <find>color</find>
-      <find>colorMu</find>
       <find>pix</find>
       <find>main</find>
       <find>compu</find>
@@ -136,6 +164,21 @@
       <find>init</find>
       <find>dou</find>
       <find>doubles</find>
+      <find>comp</find>
+      <find>colorM</find>
+      <find>leng</find>
+      <find>oneD</find>
+      <find>color</find>
+      <find>colorMu</find>
+      <find>XEX</find>
+      <find>setF</find>
+      <find>&amp; angleStepsMask</find>
+      <find>fresnl</find>
+      <find>gree</find>
+      <find>setp</find>
+      <find>setPa</find>
+      <find>blo</find>
+      <find>OneDi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -161,15 +204,31 @@
         <option value="$PROJECT_DIR$/src/main/ImageGetter.java" />
         <option value="$PROJECT_DIR$/src/modeling/NDiffraction.java" />
         <option value="$PROJECT_DIR$/src/modeling/Test.java" />
+        <option value="$PROJECT_DIR$/src/modeling/Apenture.java" />
+        <option value="$PROJECT_DIR$/src/modeling/CircularApenture.java" />
+        <option value="$PROJECT_DIR$/src/modeling/apentures/CircularApenture.java" />
+        <option value="$PROJECT_DIR$/src/modeling/apertures/CircularApenture.java" />
+        <option value="$PROJECT_DIR$/src/modeling/apertures/OneDemensionalAperture.java" />
+        <option value="$PROJECT_DIR$/src/modeling/drawing.java" />
+        <option value="$PROJECT_DIR$/src/modeling/apertures/DoubleSlitApenture.java" />
+        <option value="$PROJECT_DIR$/src/modeling/apertures/BlockAperture.java" />
+        <option value="$PROJECT_DIR$/src/modeling/calculations/FresnelCalc.java" />
+        <option value="$PROJECT_DIR$/src/modeling/apertures/DoubleSlitAperture.java" />
+        <option value="$PROJECT_DIR$/src/modeling/apertures/OneDimensionalAperture.java" />
+        <option value="$PROJECT_DIR$/src/modeling/apertures/SlitAperture.java" />
         <option value="$PROJECT_DIR$/src/modeling/Diffraction.java" />
-        <option value="$PROJECT_DIR$/src/main/controllers/Controller.java" />
         <option value="$PROJECT_DIR$/src/modeling/Modulating.java" />
+        <option value="$PROJECT_DIR$/src/modeling/apertures/SquareAperture.java" />
+        <option value="$PROJECT_DIR$/src/modeling/apertures/Aperture.java" />
+        <option value="$PROJECT_DIR$/src/modeling/apertures/CircularAperture.java" />
+        <option value="$PROJECT_DIR$/src/main/controllers/Controller.java" />
+        <option value="$PROJECT_DIR$/src/modeling/drawing/Diffraction.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="951" />
-    <option name="width" value="975" />
+    <option name="x" value="953" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -180,6 +239,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,32 +250,6 @@
             <path>
               <item name="FresnelDiffraction" type="b2602c69:ProjectViewProjectNode" />
               <item name="FresnelDiffraction" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FresnelDiffraction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FresnelDiffraction" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FresnelDiffraction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FresnelDiffraction" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="FresnelDiffraction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FresnelDiffraction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FresnelDiffraction" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="FresnelDiffraction" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FresnelDiffraction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FresnelDiffraction" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -229,13 +263,34 @@
               <item name="FresnelDiffraction" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="fxmls" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FresnelDiffraction" type="b2602c69:ProjectViewProjectNode" />
               <item name="FresnelDiffraction" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="modeling" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FresnelDiffraction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FresnelDiffraction" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="modeling" type="462c0819:PsiDirectoryNode" />
+              <item name="apertures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FresnelDiffraction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FresnelDiffraction" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="modeling" type="462c0819:PsiDirectoryNode" />
+              <item name="calculations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FresnelDiffraction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FresnelDiffraction" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="modeling" type="462c0819:PsiDirectoryNode" />
+              <item name="drawing" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FresnelDiffraction" type="b2602c69:ProjectViewProjectNode" />
@@ -261,7 +316,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -269,12 +323,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560964955479" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../libs/mail.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -375,6 +429,9 @@
       <workItem from="1560847319269" duration="24326000" />
       <workItem from="1560874554645" duration="3274000" />
       <workItem from="1560933939998" duration="13630000" />
+      <workItem from="1560969696404" duration="591000" />
+      <workItem from="1561120607276" duration="21092000" />
+      <workItem from="1561192770303" duration="5339000" />
     </task>
     <task id="LOCAL-00001" summary="First version">
       <created>1560876310781</created>
@@ -394,7 +451,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85643000" />
+    <option name="totallyTimeSpent" value="112665000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -406,10 +463,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26072875" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26865673" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -418,8 +475,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49959514" weight="0.3283582" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49716598" visible="true" weight="0.17578773" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39966834" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4968017" visible="true" weight="0.3109426" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32827735" />
@@ -427,7 +484,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3283582" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.502834" side_tool="true" visible="true" weight="0.17578773" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50319827" side_tool="true" weight="0.17551462" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32827735" />
       <window_info anchor="bottom" id="Statistic" order="13" weight="0.76119405" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -440,6 +497,38 @@
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26865673" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49959514" weight="0.3283582" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4968017" visible="true" weight="0.3109426" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32827735" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3283582" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50319827" side_tool="true" weight="0.17551462" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32827735" />
+      <window_info anchor="bottom" id="Statistic" order="13" weight="0.76119405" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32955465" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -515,72 +604,139 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modeling/Test.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/Launcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/a1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ImageGetter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/javafx-src.zip!/javafx/beans/value/ChangeListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="57" column="22" lean-forward="true" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/javafx-src.zip!/javafx/beans/value/ChangeListener.java" />
+    <entry file="file://$PROJECT_DIR$/src/modeling/drawing.java" />
+    <entry file="file://$PROJECT_DIR$/src/modeling/apertures/BlockAperture.java" />
     <entry file="file://$PROJECT_DIR$/src/main/fxmls/main.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="859">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="595">
           <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/controllers/Controller.java">
+    <entry file="file://$PROJECT_DIR$/out/production/FresnelDiffraction/test.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modeling/apertures/TTT.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/ImageGetter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2710">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="85">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modeling/apertures/DoubleSlitAperture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3331#3332#0" expanded="true" />
-            <element signature="e#3361#3362#0" expanded="true" />
+            <element signature="e#159#160#0" expanded="true" />
+            <element signature="e#199#200#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modeling/Diffraction.java">
+    <entry file="file://$PROJECT_DIR$/src/modeling/apertures/SlitAperture.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="241" column="31" selection-start-line="241" selection-start-column="31" selection-end-line="241" selection-end-column="31" />
+        <state relative-caret-position="85">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#147#148#0" expanded="true" />
+            <element signature="e#187#188#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modeling/Modulating.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+        <state relative-caret-position="153">
+          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
-            <element signature="e#782#783#0" expanded="true" />
+            <element signature="e#201#202#0" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Launcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modeling/apertures/Aperture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modeling/apertures/CircularAperture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="185" column="31" selection-start-line="185" selection-start-column="31" selection-end-line="185" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modeling/apertures/OneDimensionalAperture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <element signature="e#219#220#0" expanded="true" />
+            <element signature="e#259#260#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modeling/apertures/SquareAperture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/controllers/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="158" column="99" selection-start-line="158" selection-start-column="99" selection-end-line="158" selection-end-column="99" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modeling/Diffraction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="133" column="12" selection-start-line="133" selection-start-column="12" selection-end-line="133" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modeling/calculations/FresnelCalc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2594">
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modeling/drawing/Diffraction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="43" column="59" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

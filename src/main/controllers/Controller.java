@@ -16,9 +16,10 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
 import main.ImageGetter;
-import modeling.Modulating;
+import modeling.drawing.Diffraction;
 
 import javax.imageio.ImageIO;
+import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
@@ -51,7 +52,7 @@ public class Controller implements Initializable {
     private Image curImage;
 
     private ImageGetter imageGetter;
-    private Modulating modulate;
+    private Diffraction modulate;
 
     @FXML
     void updateImage() {
@@ -137,31 +138,31 @@ public class Controller implements Initializable {
 
     @FXML
     void circle() {
-        imageGetter = (len, radius) -> SwingFXUtils.toFXImage(modulate.getCircleImage(len, radius), null);
+        imageGetter = (len, radius) -> SwingFXUtils.toFXImage(modulate.getCircularImage(len, radius/4), null);
         updateImage();
     }
 
     @FXML
     void slit() {
-        imageGetter = (len, radius) -> SwingFXUtils.toFXImage(modulate.getSlitImage(len, radius), null);
+        imageGetter = (len, radius) -> SwingFXUtils.toFXImage(modulate.getSlitImage(len, radius/8), null);
         updateImage();
     }
 
     @FXML
     void doubleSlit() {
-        imageGetter = (len, radius) -> SwingFXUtils.toFXImage(modulate.getDoubleSlitImage(len, radius), null);
+        imageGetter = (len, radius) -> SwingFXUtils.toFXImage(modulate.getDoubleSlitImage(len, radius/8), null);
         updateImage();
     }
 
     @FXML
     void square() {
-        imageGetter = (len, radius) -> SwingFXUtils.toFXImage(modulate.getSquareImage(len, radius), null);
+        imageGetter = (len, radius) -> SwingFXUtils.toFXImage(modulate.getSquareImage(len, radius/4), null);
         updateImage();
     }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        modulate = new Modulating();
+        modulate = new Diffraction(new Dimension(500,500));
 
         rSlider.valueProperty().addListener((observable, oldValue, newValue) -> rTextField.setText(Double.toString(((double) ((int) (newValue.doubleValue() * 100))) / 100)));
         rSlider.valueChangingProperty().addListener(this::changed);
