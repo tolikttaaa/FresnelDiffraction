@@ -138,7 +138,7 @@ public class Controller implements Initializable {
 
     @FXML
     void circle() {
-        imageGetter = (len, radius) -> SwingFXUtils.toFXImage(modulate.getCircularImage(len, radius/4), null);
+        imageGetter = (len, radius) -> SwingFXUtils.toFXImage(modulate.getCircularImage(len, radius/3), null);
         updateImage();
     }
 
@@ -156,7 +156,7 @@ public class Controller implements Initializable {
 
     @FXML
     void square() {
-        imageGetter = (len, radius) -> SwingFXUtils.toFXImage(modulate.getSquareImage(len, radius/4), null);
+        imageGetter = (len, radius) -> SwingFXUtils.toFXImage(modulate.getSquareImage(len, radius/3), null);
         updateImage();
     }
 

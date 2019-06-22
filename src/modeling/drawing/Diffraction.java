@@ -20,22 +20,22 @@ public class Diffraction {
 
 
     public BufferedImage getCircularImage(int length, double size) {
-        circularAperture.setParams(length,size);
+        circularAperture.setUserParams(length,size);
         return buildImage(circularAperture);
     }
 
     public BufferedImage getSquareImage(int length, double size) {
-        squareAperture.setParams(length,size);
+        squareAperture.setUserParams(length,size);
         return buildImage(squareAperture);
     }
 
     public BufferedImage getSlitImage(int length, double size) {
-        slitAperture.setParams(length,size);
+        slitAperture.setUserParams(length,size);
         return buildImage(slitAperture);
     }
 
     public BufferedImage getDoubleSlitImage(int length, double size) {
-        doubleSlitAperture.setParams(length,size);
+        doubleSlitAperture.setUserParams(length,size);
         return buildImage(doubleSlitAperture);
     }
 
@@ -51,7 +51,7 @@ public class Diffraction {
 
 
     public BufferedImage buildImage(Aperture aperture) {
-        aperture.computeFunction();
+        aperture.calculateFunction();
 
         pixels = new int[winSize.width*winSize.height];
 

@@ -7,11 +7,11 @@ public class SlitAperture extends OneDimensionalAperture {
     }
 
     @Override
-    public void setParams(int length, double size) {
-        super.setParams(length, size);
-        lineLocations = new double[lineCount = 2];
-        lineLocations[0] = -size;
-        lineLocations[1] =  size;
+    public void setUserParams(int length, double size) {
+        super.setUserParams(length, size);
+        lineX = new double[lineCount = 2];
+        lineX[0] = -size;
+        lineX[1] =  size;
     }
-    boolean hasXSymmetry() { return true; }
+    boolean hasSymmetryX() { return true; }
 }

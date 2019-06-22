@@ -7,14 +7,14 @@ public class DoubleSlitAperture extends OneDimensionalAperture {
     }
 
     @Override
-    public void setParams(int length, double size) {
+    public void setUserParams(int length, double size) {
         if(size>0.125)size=0.125;
-        super.setParams(length,size);
-        lineLocations = new double[lineCount = 4];
-        lineLocations[0] = -size;
-        lineLocations[1] = -0.125;
-        lineLocations[2] =  0.125;
-        lineLocations[3] =  size;
+        super.setUserParams(length,size);
+        lineX = new double[lineCount = 4];
+        lineX[0] = -size;
+        lineX[1] = -0.125;
+        lineX[2] =  0.125;
+        lineX[3] =  size;
     }
-    boolean hasXSymmetry() { return true; }
+    boolean hasSymmetryX() { return true; }
 }

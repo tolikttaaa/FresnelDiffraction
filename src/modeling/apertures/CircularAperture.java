@@ -4,25 +4,27 @@ import static java.lang.Math.PI;
 
 public class CircularAperture extends Aperture {
 
+
     //Количество шагов при обходе
-    int angleSteps;
-    int angleStepsMask;
+    //Чем больше шагов, тем точнее рассчет
+    private int angleSteps;
+    private int angleSteps2;
+
+    //Чтобы не вышли за границы массива
+    private int angleStepsMask;
+    private int angleSteps2Mask;
 
     //Значения косинуса и синуса для каждого шага
-    //Чем больше шагов, тем точнее рассчет
-    double[] angcos1;
-    double[] angsin1;
-    //Константа для точности вычисления интенсивности
-    static final int fixedPoint = 2048;
+    private double[] angcos1;
+    private double[] angsin1;
 
-    static final double pi2 = PI * 2;
+    private long[] angcos2;
+    private long[] angsin2;
 
-    double apertureArgMult;
-
-    long[] angcos2;
-    long[] angsin2;
-    int angleSteps2;
-    int angleSteps2Mask;
+    //Константы для вычислений интенсивности
+    private static final int fixedPoint =19;
+    private static final double pi2 = PI * 2;
+    private double apertureArgMult;
 
 
     public CircularAperture(int length, double size,int grid) {
@@ -58,7 +60,7 @@ public class CircularAperture extends Aperture {
         double ard = ((double) accumR)/(angleSteps*fixedPoint);
         double aid = ((double) accumI)/(angleSteps*fixedPoint);
         double mag = ard*ard + aid*aid;
-        setFunction(i,j,mag);
+        setIntensity(i,j,mag);
     }
 
 
@@ -85,14 +87,14 @@ public class CircularAperture extends Aperture {
         }
     }
 
-    void compute() {
+    void calculatePart() {
         int i, j;
         //В силу симметрии достаточно заполнить только треугольник
         //Потом его поотражаем и получим функцию на всей площадке
         for (i = 0; i != gridSizeX / 2; i++) {
             for (j = 0; j <= i; j++) {
                 //Очищаем аккумулятор
-                clearAccum();
+                accumR = accumI = 0;
 
                 //Начало координат поместим в середину площадки интегрирования
                 //И положим единичный отрезок, равный длине этой площидки
@@ -178,16 +180,16 @@ public class CircularAperture extends Aperture {
     }
 
     @Override
-    public void setParams(int length, double size) {
+    public void setUserParams(int length, double size) {
         this.length=length;
         this.size=size;
-        colorLenMults = Math.exp(length/110.)*650/510.;
+        lambdaMult = Math.exp(length/110.)*650/510.;
 
         apertureArgMult = angleSteps2/4;
-        apertureArgMult *= colorLenMults*colorLenMults;
+        apertureArgMult *= lambdaMult * lambdaMult;
     }
 
-    boolean hasXSymmetry() { return true; }
-    boolean hasYSymmetry() { return true; }
+    boolean hasSymmetryX() { return true; }
+    boolean hasSymmetryY() { return true; }
     boolean hasDiagonalSymmetry() { return true; }
 }
